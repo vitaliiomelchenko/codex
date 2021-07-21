@@ -1,0 +1,182 @@
+.teamGrid
+    padding-top: 30px
+    padding-bottom: 30px
+    &__title
+        margin: 0 auto 50px
+    &__list
+        margin-bottom: 75px
+        &:last-child
+            margin-bottom: 0
+        &--featured
+            margin-bottom: 20px
+    &__memberWrapper
+        margin-bottom: 15px
+        &.col-xl-2
+            +min-screen($breakpoint-xl)
+                flex: 0 0 20%
+                max-width: 20%
+                img
+                    height: 165px
+        &--featured
+            .teamGrid
+                &__member
+                    padding: 25px
+                    height: 100%
+                    padding-bottom: 35px
+                    background: $color-bg-light
+                    .row
+                        +max-screen($breakpoint-sm)
+                            flex-direction: column
+                            align-items: center
+                &__memberHeader
+                    +max-screen($breakpoint-sm)
+                        margin-bottom: 15px
+                    img
+                        width: 97px
+                        height: 90px
+                &__memberFooter
+                    padding-top: 0
+                    padding-bottom: 0
+                &__memberInfo
+                    text-align: left
+                &__memberPosition
+                    font-size: 17px
+                &__memberFooter--hasBio
+                    position: relative
+    &__memberWrapper--single
+        .teamGrid
+            &__member
+                &:hover
+                    .teamGrid
+                        &__memberFooter--hasBio
+                            top: 0
+                            z-index: 10
+                            height: 100%
+                            background: $color-bg-light
+                            
+                        &__memberBio
+                            height: auto
+                            transform: scaleY(1)
+                            opacity: 1
+                            margin-top: 10px
+                            position: relative
+                            // transition: .6s
+                            p
+                                font-size: 16px
+                            & > *
+                                height: auto
+                                opacity: 1
+                            &::before
+                                content: ""
+                                z-index: -1
+                                width: calc(100% + 30px)
+                                height: 100%
+                                display: block
+                                position: absolute
+                                left: -15px
+                                top: 0
+                                // background: $color-bg-light
+            &__memberBio
+                // background: $color-bg-light
+                color: $color-txt-secondary
+                transform: scaleY(0)
+                // transition: .6s
+                height: 0
+                opacity: 0
+                & > *
+                    height: 0
+                    opacity: 0
+    &__member
+        padding: 15px
+        padding-bottom: 75px
+        border-radius: 30px
+        &:hover
+          .teamGrid
+                &__memberFooter--hasBio
+                    top: 0
+                    z-index: 10
+                    height: 100%
+                &__memberBio
+                    height: auto
+                    // transform: scaleY(1)
+                    // opacity: 1
+                    // position: relative
+                    // & > *
+                    //     height: auto
+                    //     opacity: 1
+                    // &::before
+                    //     content: ""
+                    //     z-index: -1
+                    //     width: calc(100% + 30px)
+                    //     height: 100%
+                    //     display: block
+                    //     position: absolute
+                    //     left: -15px
+                    //     top: 0
+                    //     background: $color-bg-light
+    &__memberFooter--hasBio
+        transition: .6s
+        .teamGrid
+            &__memberBio
+                // background: $color-bg-light
+                color: $color-txt-secondary
+                // transform: scaleY(0)
+                // transition: .6s
+                // height: 0
+                // opacity: 0
+                // & > *
+                //     height: 0
+                //     opacity: 0
+    &__memberHeader
+        img
+            width: 100%
+            max-width: 100%
+            object-fit: cover
+            height: 230px
+            border-radius: 15px
+            +max-screen($breakpoint-lg)
+                height: 375px
+            +max-screen($breakpoint-md)
+                height: 320px
+            +max-screen($breakpoint-sm)
+                height: 190px
+            +max-screen($breakpoint-xs)
+                height: 120px
+    &__memberFooter
+        padding: 15px
+        position: absolute
+        top: calc(100% - 75px)
+        left: 7px
+        right: 7px
+        // background: $color-bg-light
+        // height: 75px
+        // transition: .6s
+        border-radius: 30px
+        //background: red
+
+    &__memberBio
+        // background: $color-bg-light
+        color: $color-txt-secondary
+        // transform: scaleY(0)
+        // transition: .6s
+        // height: 0
+        // opacity: 0
+        // & > *
+        //     height: 0
+        //     opacity: 0
+        margin-bottom: 30px
+        p
+            font-size: 22px
+            +max-screen($breakpoint-xl)
+                font-size: 20px
+    &__memberInfo
+         text-align: center
+    &__memberName
+        color: $color-secondary
+        font-weight: 700
+    &__memberPosition
+        color: $color-txt-secondary
+        font-size: 14px
+    &__departmentName
+        color: $color-secondary
+        margin-bottom: 35px

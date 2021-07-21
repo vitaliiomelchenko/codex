@@ -1,0 +1,65 @@
+.postTitle
+    margin-top: 50px
+    padding: 65px 90px
+    background-color: $color-bg-light
+    border-radius: 12px
+    h1
+        color: $color-secondary
+        font-size: 44px
+        line-height: 1
+    &__meta
+        color: $color-purple
+
+.authorInfoBox
+    padding: 40px
+    background-color: $color-secondary
+    border-radius: 30px
+    +max-screen($breakpoint-lg)
+        margin-top: 40px
+        display: flex
+    +max-screen($breakpoint-sm)
+        flex-wrap: wrap
+        justify-content: center
+    &.content-block
+        color: $color-txt-light
+        font-weight: 600
+        .authorInfoBox
+            &__img
+                width: 65px
+                height: 65px
+                object-fit: cover
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                
+            &__meta
+                line-height: 1
+        a
+            color: white
+            text-decoration: underline
+    &__header
+        text-align: center
+        margin-bottom: 40px
+        +max-screen($breakpoint-lg)
+            margin-right: 30px
+        +max-screen($breakpoint-sm)
+            margin-right: 0
+            margin-bottom: 15px
+        strong
+            display: block
+            color: white
+    &.companyInfoBox
+        .authorInfoBox
+            &__img
+                width: 100%
+                object-fit: contain
+                +max-screen($breakpoint-lg)
+                    height: 100%
+                    object-position: top
+                +max-screen($breakpoint-sm)
+                    height: 150px
+                    width: 150px
+
+
+
+            

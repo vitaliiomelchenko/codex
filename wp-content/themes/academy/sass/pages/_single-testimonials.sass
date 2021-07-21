@@ -1,0 +1,65 @@
+.authorBox
+    background-color: $color-secondary
+    border-radius: 30px
+    padding: 25px 15px
+    .button[rel="prev"]
+        width: 52px
+        height: 52px
+        min-width: 0
+        padding: 0
+        background-image: url('../assets/images/icons/arrow.svg')
+        background-repeat: no-repeat
+        background-position: center
+        margin-right: 10px
+    .button[rel="next"]
+        width: 52px
+        height: 52px
+        min-width: 0
+        padding: 0
+        background-image: url('../assets/images/icons/arrow.svg')
+        background-repeat: no-repeat
+        background-position: center
+        transform: rotate(180deg)
+    &__nav
+        margin-left: auto
+        padding-left: 15px
+        
+.testimonial
+    max-width: 800px
+    padding-top: 75px
+    padding-bottom: 75px
+    &__content
+        color: $color-txt-secondary
+        // margin-bottom: 60px
+        strong
+            color: $color-secondary
+            font-weight: 600
+    &__navRow
+    &__navWrapper
+        background-color: $color-bg-light
+    .back-button
+        margin-bottom: 15px
+        min-width: 0
+        padding-left: 0
+        border: 0
+        &:hover
+            border: 0
+            &::before
+                margin-left: 0
+                margin-right: 10px
+            
+.testimonialPrev
+    .testimonials__header
+        padding-right: 25px
+        height: 100%
+        padding: 15px 25px
+    .authorBox
+        &__nav
+            margin-left: 0
+            padding-left: 0
+            margin-right: 20px
+.testimonialNext
+    .testimonials__header
+        padding-left: 25px
+        height: 100%
+        padding: 15px 25px

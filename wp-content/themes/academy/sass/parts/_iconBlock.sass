@@ -1,0 +1,32 @@
+.iconBlock
+    display: block
+    &__icon
+        position: relative
+        background-color: #F4FCFF
+        border-radius: rem(30px)
+        padding-bottom: 75%
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            width: 75%
+            height: 75%
+            object-fit: contain
+            // opacity: 0
+            transform: translate(-50%,-50%) scale(0.9)
+            transition: 0.4s
+            +max-screen($breakpoint-lg)
+                width: 45%
+                height: 45%
+            +max-screen($breakpoint-sm)
+                width: 80%
+                height: 80%
+        &.loaded img
+            opacity: 1
+            transform: translate(-50%,-50%) scale(1)
+    &__wrapper
+        padding-top: rem(7.5px)
+        padding-bottom: rem(7.5px)
+    &__heading
+        padding-top: rem(25px)
+        padding-bottom: rem(10px)

@@ -1,0 +1,54 @@
+.cardsList
+    &::nth-child(even)
+        flex-direction: row-reverse
+    &__section
+        padding-top: 75px
+        padding-bottom: 75px
+        background-color: #EAFAFF
+        .container
+            max-width: 930px
+    &__title
+        color: $color-secondary
+        margin-bottom: 35px
+
+    &__itemWrapper
+        padding: 17px
+        background-color: white
+        border-radius: 30px
+        margin-bottom: 20px
+
+    &__item
+        margin-left: 0
+        margin-right: 0
+        +min-screen(768px)
+            flex-wrap: nowrap
+        +max-screen($breakpoint-md)
+            justify-content: center
+    &__imgWrapper
+        background-color: #EAFAFF
+        border-radius: 30px
+        display: flex
+        max-width: 220px
+    &__img
+        max-width: 150px
+        object-fit: contain
+        margin: auto
+    &__content
+        color: #616B94
+        padding: 15px 30px
+        +max-screen(767px)
+            text-align: center
+        h1, h2, h3, h4, h5, h6, strong
+            color: $color-secondary
+
+.banner + .cardsList__section, .banner+.textLogos
+    margin-top: -150px
+    position: relative
+    z-index: 10
+    +max-screen($breakpoint-lg)
+        margin-top: -50px
+    +max-screen($breakpoint-md)
+        margin-top: 0
+.row-reverse
+    .cardsList__content
+        padding-left: 15px

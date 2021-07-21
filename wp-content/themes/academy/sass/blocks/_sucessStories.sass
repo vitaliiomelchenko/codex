@@ -1,0 +1,71 @@
+.sucessStories
+    padding-top: 75px
+    padding-bottom: 75px
+    &__col
+        background-color: $color-secondary
+        display: flex
+        flex-direction: column
+        border-top-left-radius: 20px
+        border-bottom-left-radius: 20px
+        overflow: hidden
+        +max-screen($breakpoint-md)
+            border-top-right-radius: 20px
+            border-bottom-left-radius: 0
+        &--img
+            border-top-right-radius: 20px
+            border-bottom-right-radius: 20px
+            width: 50%
+            +max-screen($breakpoint-md)
+                max-width: 100%
+                width: 100%
+                border-top-right-radius: 0
+                border-bottom-left-radius: 20px
+    &__img
+        width: 100%
+        height: 100%
+        max-height: 100%
+        object-fit: cover
+        +max-screen($breakpoint-md)
+            max-height: 400px
+            object-position: top
+            height: 100%
+    &__content
+        width: 350px
+        margin: 0 auto
+        padding-top: 80px
+        padding-bottom: 80px
+        color: white
+        +max-screen($breakpoint-md)
+            width: 100%
+            padding-left: 25px
+            padding-right: 25px
+            padding-top: 35px
+            padding-bottom: 35px
+    &__excerpt
+        font-size: 17px
+        line-height: 1.8
+        font-weight: 400
+        margin-bottom: 25px
+    &__sliderNav-Wrapper
+        padding: 35px 0
+        min-height: 55px
+    .slick-arrow
+        width: 52px
+        height: 52px
+        min-width: 0
+        padding: 0
+        background-image: url('../assets/images/icons/arrow-dark.svg')
+        background-repeat: no-repeat
+        background-position: center
+        margin-right: 10px
+        background-color: white
+        font-size: 0
+        border: none
+        border-radius: 50%
+        &:hover
+            //filter: drop-shadow(0px 6px 20px rgba(75, 190, 221, 0.38))
+            box-shadow: 0px 6px 20px rgba(75, 190, 221, 0.2)
+    .slick-next
+        transform: rotate(180deg)
+    .custom-next
+        transform: rotate(180deg)

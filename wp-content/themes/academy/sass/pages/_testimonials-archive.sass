@@ -1,0 +1,98 @@
+.testimonials
+    &__wrapper
+        // padding-top: 70px
+        padding-bottom: 70px
+    &__sectionTitle
+        margin-bottom: 45px
+    &__item
+        background-color: $color-secondary
+        border-radius: $radius-lg
+        padding: 25px 35px
+        padding-bottom: 35px
+        height: 100%
+        display: flex
+        flex-direction: column
+        +max-screen($breakpoint-md)
+            font-size: 20px
+    &__itemWrapper
+        margin-bottom: 15px
+    &__header
+        display: flex
+        align-items: center
+        margin-bottom: 25px
+    &__img
+        height: 60px
+        width: 60px
+        object-fit: cover
+        border-radius: $radius-md
+        margin-right: 15px
+    &__name
+        font-weight: 700
+        color: white
+    &__position
+        font-size: 17px
+        font-weight: 600
+        color: $color-txt-secondary
+    &__content
+        margin-bottom: 30px
+        color: white
+        line-height: 1.6
+        font-size: 22px
+        +max-screen($breakpoint-lg)
+            font-size: 20px
+        +max-screen($breakpoint-md)
+            font-size: 18px
+    &__footer
+        display: flex
+        // flex-wrap: wrap
+        justify-content: space-between
+        margin-top: auto
+        +max-screen($breakpoint-sm)
+            margin-top: 0
+            flex-direction: column-reverse
+            align-items: center
+        img
+            max-width: 40%
+            height: 50px
+            object-fit: contain
+            +max-screen($breakpoint-sm)
+                width: 300px
+                max-width: 80%
+                padding: 15px
+                height: 75px
+    .button
+        max-width: 125px
+        margin-top: auto
+.page-template-archive-testimonials
+        .smallBanner
+            +max-screen($breakpoint-lg)
+                max-width: calc(100% - 60px)
+                margin: 0 auto
+.singleItemSlider
+    .testimonials__itemWrapper
+        margin-left: 15px
+        margin-right: 15px
+    .slick-list 
+        margin-left: -15px
+        margin-right: -15px
+    &__sliderNav
+        display: flex
+        justify-content: center
+        margin-top: 15px
+        
+
+.slick-arrow
+    width: 52px
+    height: 52px
+    min-width: 0
+    padding: 0
+    background-image: url(../assets/images/icons/arrow.svg)
+    background-repeat: no-repeat
+    background-position: center
+    margin-right: 10px
+    background-color: #4bbedd
+    font-size: 0
+    border: none
+    border-radius: 50%
+.slick-next
+    transform: rotate(180deg)

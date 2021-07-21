@@ -1,0 +1,205 @@
+.formImage
+    padding-top: 75px
+    +max-screen($breakpoint-md)
+        padding-top: 35px
+    &__content
+        +max-screen($breakpoint-md)
+            padding-top: rem(15px)
+            padding-bottom: rem(15px)
+            order: 2
+            padding-top: rem(40px)
+        &__text
+            +min-screen($breakpoint-xl)
+                width: 650px
+    &__image
+        +max-screen($breakpoint-md)
+            padding-top: rem(15px)
+            padding-bottom: rem(15px)
+        &__img
+            width: 100%
+            height: auto
+            +min-screen($breakpoint-xl)
+                transform: translateX(75px)
+            +max-screen($breakpoint-lg)
+                transform: translateX(0)
+            +max-screen($breakpoint-md)
+                width: 100%
+        &__figure
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 75%
+            height: 75%
+            z-index: -1
+            border-radius: 30px
+        &__inner
+            position: relative
+
+    video
+        max-width: 100%
+    &__outline
+        background-color: $color-primary
+        .formImage
+            &__content__inner
+                color: white
+        .content-block
+            h1, h2, h3, h4, h5, h6
+                color: white
+        .form 
+            .nf-form-content 
+                .nf-field-element
+
+                    input
+                        border: none
+                        background: transparent
+                        border-bottom: 1px solid white
+                        color: white
+                        padding-left: 0
+                        --webkit-appearence: none
+                        padding: .9375rem 0
+                        outline: 0
+                        font-weight: 600
+                        font-family: Proxima Nova,sans-serif
+                        font-size: .8125rem
+                        &::placeholder
+                            color: white
+                    input[type=text]
+                        border-bottom: 1px solid white
+                        color: white
+                    input[type=email]
+                        border-bottom: 1px solid white
+                        color: white
+                    input[type=button]
+                        background-color: $color-secondary
+                        border-bottom: 0
+                        padding: 1.25rem
+                        padding-left: 1.25rem
+                    textarea
+                        background-color: $color-bg-light
+                        color: $color-primary
+                        &::placeholder
+                            color: $color-primary
+                .html-wrap 
+                    p
+                        color: white
+        
+        &-light
+            background-color: $color-bg-light
+            &.dark
+               background-color: $color-primary 
+            .form 
+                .nf-form-fields-required
+                    color: $color-txt-secondary
+                .nf-form-fields-required
+                    color: $color-txt-secondary
+                .nf-form-content 
+
+                    .nf-field-element 
+                        input
+                            border: none
+                            background: white
+                            border-bottom: 1px solid white
+                            color: $color-txt-secondary
+                            border-radius: 9px
+                            --webkit-appearence: none
+                            padding: .9375rem 0
+                            padding-left: 1.25rem
+                            outline: 0
+                            font-weight: 600
+                            font-family: Proxima Nova,sans-serif
+                            font-size: .8125rem
+                            &::placeholder
+                                color: $color-txt-secondary
+                        // input[type=text]
+                        //     border-bottom: 1px solid white
+                        //     color: white
+                        // input[type=email]
+                        //     border-bottom: 1px solid white
+                        //     color: white
+                        input[type=button]
+                            background-color: $color-primary
+                            color: white
+                            padding: 1.25rem
+                            padding-left: 1.25rem
+                            border-radius: 50px
+                        textarea
+                            background-color: white
+                            color: $color-txt-secondary
+                            border: 0
+                            &::placeholder
+                                color: $color-txt-secondary
+                    .html-wrap 
+                        p
+                            color: $color-txt-secondary
+        &-light--brand
+            background-color: $color-primary
+            padding-bottom: 50px
+            .content-block
+                color: white
+                h1, h2, h3, h4, h5, h6
+                    color: white
+            .file_upload-wrap
+                flex-wrap: nowrap !important
+                align-items: center
+                .nf-fu-progress
+                    display: none
+                .nf-fu-fileinput-button
+                    background: transparent
+                    border: 1px solid white
+                    border-radius: 26px
+                    padding: 15px 35px
+                input:not(.nf-fu-fileinput-button)
+                    padding: 0 !important
+            .form 
+                .nf-before-form-content
+                    display: none !important
+                .nf-form-content .nf-field-container
+                    margin-bottom: 12px
+                .nf-form-fields-required
+                    color: white
+                .nf-form-content 
+                    .nf-field-container
+                        margin-bottom: 12px
+                    .checkbox-wrap
+                        margin-bottom: 25px
+                    .nf-field-description
+                        margin-right: 0
+                    .html-wrap
+                        margin-bottom: 25px
+                        p
+                            color: white
+                    .label-above 
+                        .file_upload-wrap
+                            margin-bottom: 25px
+                            .nf-field-label 
+                                margin-bottom: 0
+                                label
+                                    font-size: 14px
+                                    font-weight: 600
+                                    min-width: 87px
+                                    color: white
+                                    display: inline-block
+                                    margin-right: 15px
+                        .checkbox-wrap
+                            margin-bottom: 25px
+                    .form .nf-form-content .label-above .nf-field-label label
+                    .nf-field-element input[type=button]
+                        border: 0
+                        background-color: $color-secondary
+                        color: white
+                        margin-top: 10px
+                        &:hover
+                            //filter: drop-shadow(0px 6px 20px rgba(75, 190, 221, 0.38))
+                            box-shadow: 0px 6px 20px rgba(75, 190, 221, 0.2)
+        &-light--dark
+            background-color: $color-secondary
+            .form .nf-form-content 
+                .nf-field-element 
+                    input[type=button]
+                        background-color: $color-primary
+    .content-block
+        .button.button--outline.light
+            color: white !important
+            &:hover
+                text-decoration: none

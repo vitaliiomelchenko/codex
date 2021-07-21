@@ -1,0 +1,51 @@
+.textLogos
+    &__col
+        &--logos
+            +max-screen($breakpoint-md)
+                padding-top: rem(30px)
+    &__slider
+        margin-left: -15px
+        margin-right: -15px
+        .iconBlock
+            &__wrapper
+                padding: 15px
+    &.textLogos--slider
+        padding-top: 35px
+        padding-bottom: 35px
+        h2
+            text-align: center
+            margin-bottom: 35px
+        .textLogos__slider
+            margin-bottom: 35px
+        .textLogos__sliderNav
+            text-align: center
+            &--light
+                .slick-arrow
+                    background-color: $color-primary
+    button
+        width: 52px
+        height: 52px
+        min-width: 0
+        padding: 0
+        background-image: url('../assets/images/icons/arrow.svg')
+        background-repeat: no-repeat
+        background-position: center
+        margin-right: 10px
+        background-color: $color-primary
+        font-size: 0
+        border: none
+        border-radius: 50%
+        &:hover
+            //filter: drop-shadow(0px 6px 20px rgba(75, 190, 221, 0.38))
+            box-shadow: 0px 6px 20px rgba(75, 190, 221, 0.2)
+    .slick-arrow
+        background-color: $color-secondary
+    .slick-next
+        transform: rotate(180deg)
+    .slick-disabled
+        opacity: .5
+
+.banner + .textLogos
+    margin-top: -150px
+    position: relative
+    z-index: 10

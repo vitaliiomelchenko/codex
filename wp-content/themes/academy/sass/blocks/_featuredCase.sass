@@ -1,0 +1,104 @@
+.featuredCase
+    &__inner
+        background-color: $color-secondary
+        border-radius: rem(12px)
+        padding: rem(65px)
+        padding-bottom: 130px
+        // margin: 0 15px
+        +max-screen($breakpoint-xl)
+            padding: 50px
+            padding-bottom: 110px
+        +max-screen($breakpoint-sm)
+            padding: 20px
+            padding-bottom: 90px
+        .button
+            padding-left: 75px
+            padding-right: 75px
+            +max-screen($breakpoint-xl)
+                padding-left: 45px
+                padding-right: 45px
+            +max-screen($breakpoint-md)
+                width: 100%
+    &__row
+        margin-left: -30px
+        margin-right: -30px
+        +max-screen($breakpoint-md)
+            margin-left: 0
+            margin-right: 0
+    &__col
+        padding-left: 30px
+        padding-right: 30px
+        +max-screen($breakpoint-md)
+            padding-left: 0
+            padding-right: 0
+        &--icons
+            +max-screen($breakpoint-md)
+                order: 2
+                padding-top: rem(50px)
+        &--content
+            +max-screen($breakpoint-lg)
+
+    &__iconBlocks
+        &__item
+            display: flex
+            align-items: center
+            padding: rem(35px 45px)
+            border-radius: rem(30px)
+            background-color: #44406A
+            margin-bottom: rem(15px)
+            +max-screen($breakpoint-xl)
+                padding: 25px
+            +max-screen($breakpoint-sm)
+                flex-direction: column
+                text-align: center
+            &:nth-last-child(1)
+                margin-bottom: 0
+            &__icon
+                margin-right: rem(50px)
+                width: rem(110px)
+                height: rem(110px)
+                +max-screen($breakpoint-xl)
+                    margin-right: 35px
+                    width: rem(80px)
+                    height: rem(80px)
+                +max-screen($breakpoint-sm)
+                    margin-right: 0
+                    margin-bottom: 25px
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: contain
+                    // opacity: 0
+                    transform: scale(0.9)
+                    transition: 0.4s
+                &.loaded img
+                    opacity: 1
+                    transform: scale(1)
+            
+
+    &__content
+        padding-left: 70px
+        +max-screen($breakpoint-xl)
+            padding-left: 50px
+        +max-screen($breakpoint-lg)
+            padding-left: 35px
+        +max-screen($breakpoint-md)
+            padding-left: 0
+    .singleItemSlider
+        &__sliderNav
+            margin-top: -90px
+            position: relative
+            z-index: 10
+            +max-screen($breakpoint-sm)
+                margin-top: -70px
+        .slick-track
+            display: flex
+        .slick-slide
+            height: inherit
+        &--one
+            // margin-left: -15px
+            // margin-right: -15px
+            .slick-track
+                display: flex
+            .slick-slide
+                height: inherit

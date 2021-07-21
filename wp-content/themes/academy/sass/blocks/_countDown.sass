@@ -1,0 +1,71 @@
+.countDown
+    padding-top: 60px
+    padding-bottom: 60px
+    &__contentWrapper
+        background-color: $color-secondary
+        border-top-left-radius: 12px
+        border-bottom-left-radius: 12px
+        display: flex
+        +max-screen($breakpoint-lg)
+            border-bottom-left-radius: 0
+            border-top-right-radius: 12px
+        .content-block
+            max-width: 350px
+            margin: auto
+            padding: 30px
+            color: white
+            +max-screen($breakpoint-lg)
+                max-width: 100%
+            h1, h2, h3, h4, h5, h6
+                color: white
+    &__datesWrapper
+        padding-top: 85px
+        padding-bottom: 20px
+        padding-left: 40px
+        padding-right: 40px
+        background-color: $color-secondary-filtered
+        color: white
+        border-top-right-radius: 12px
+        border-bottom-right-radius: 12px
+        text-align: center
+        +max-screen($breakpoint-lg)
+            border-bottom-left-radius: 12px
+            border-top-right-radius: 0
+    &__time
+        font-size: 54px
+        line-height: 1
+    &__Wrapper
+        display: inline-block
+        margin-bottom: 65px
+    &__timeLabels
+        display: flex
+        justify-content: space-between
+        width: 260px
+        opacity: .7
+        text-transform: uppercase
+        span
+            display: inline-block
+            padding: 0 10px
+            font-size: 12px
+.upcomingEvents
+    &__item
+        background-color: #443f6b
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border-radius: 12px
+        font-weight: 700
+        padding: 14px 25px
+        margin-bottom: 10px
+        +max-screen($breakpoint-md)
+            flex-wrap: wrap
+        +max-screen($breakpoint-sm)
+            flex-direction: column
+        span
+            display: inline-block
+            margin-right: 15px
+            +max-screen($breakpoint-md)
+                margin-bottom: 15px
+            
+
+    

@@ -1,0 +1,63 @@
+.tablesList
+    +max-screen($breakpoint-md)
+        justify-content: center
+    &__section
+        background-color: #F4FCFF
+        padding-top: 75px
+        padding-bottom: 75px
+    &__title
+        margin-bottom: 35px
+        color: $color-secondary
+    &__itemWrapper
+        +max-screen($breakpoint-md)
+            max-width: 400px
+            margin-bottom: 35px
+    &__item
+        padding: 15px
+        border-radius: 30px
+        background-color: white
+        height: 100%
+        //filter: drop-shadow(0px 6px 20px rgba(75, 190, 221, 0.1))
+        box-shadow: 0px 6px 20px rgba(75, 190, 221, 0.2)
+    &__itemHeader
+        background-color: #2C9BB9
+        padding: 35px 25px
+        border-radius: 20px
+        margin-bottom: 35px
+        text-align: center
+        h2
+            font-size: 30px
+        h1, h2, h3, h4, h5, h6
+            margin-bottom: 0
+    ul
+        margin-left: 40px
+        max-width: 244px
+        li
+            // display: flex
+            position: relative
+            &::before
+                background-image: url(../assets/images/icons/icon-check.svg)
+                width: 15px
+                height: 11px
+                object-fit: contain
+                background-repeat: no-repeat
+                background-color: transparent
+                display: block
+                // margin-top: 15px
+                position: absolute
+                top: 11px
+                left: -30px
+    &__buttons
+        margin-top: 30px
+        +max-screen($breakpoint-md)
+            display: flex
+            flex-direction: column
+            align-items: center
+        .button
+            margin-top: 25px
+            margin-left: 0
+            &:first-child
+                margin-top: 0
+        .button + .button
+            +min-screen($breakpoint-md)
+                margin-left: 25px
